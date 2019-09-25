@@ -182,6 +182,5 @@ public partial class _Default : System.Web.UI.Page
     {
         lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
         lblDateToday.Text= DateTime.Now.ToString("dd:MM:yyyy");
-
     }
 }
