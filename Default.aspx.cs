@@ -40,7 +40,6 @@ public partial class _Default : System.Web.UI.Page
         }
         else if (i1==2)
         {
-
             lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
             DateTime tv = DateTime.Now;
             lblDateToday.Text = DateTime.Now.ToString("dddd, dd.MM.yyyy") + "<br>";
@@ -52,11 +51,8 @@ public partial class _Default : System.Web.UI.Page
                 tdole2t.Text = "P A U Z A";
             }
         }
-
         else
         {
-
-
             // ispis poruke na tv ekran iz rfin.tv_poruka
            
 
