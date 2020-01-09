@@ -106,7 +106,7 @@ public partial class _Default : System.Web.UI.Page
         using (SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["MyDbConn"].ToString()))
         {
             //sql1 = "select * from rfind.dbo.tvinfo_pult where hala='" + hala1 + "'  order by datum desc";
-            sql1 = "select * from rfind.dbo.tvinfo_pult  order by datum desc";
+            sql1 = "select * from fx_rfind.dbo.tvinfo_pult  order by datum desc";
             SqlCommand cmd = new SqlCommand(sql1, cn);
             cn.Open();
 
@@ -128,7 +128,7 @@ public partial class _Default : System.Web.UI.Page
 
         using (SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["MyDbConn"].ToString()))
         {
-            sql1 = "rfind.dbo.tv_dpr " + hala1 + " ,4";
+            sql1 = "fx_rfind.dbo.tv_dpr " + hala1 + " ,4";
             SqlCommand cmd = new SqlCommand(sql1, cn);
             cn.Open();
 
